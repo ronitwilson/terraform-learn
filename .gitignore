@@ -1,0 +1,4 @@
+# Ignore all .tfstate files
+*.tfstate
+*.hcl
+LICENSE.txt
