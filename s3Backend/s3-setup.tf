@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "ronterrastate240225"
+  bucket = "ronterrastate260225"
 
   tags = {
     Name        = "Terraform State Bucket"
@@ -46,7 +46,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 
 terraform {
   backend "s3" {
-    bucket         = "ronterrastate240225"
+    bucket         = "ronterrastate260225"
     key            = "terraform/state.tfstate" # Path to the state file
     region         = "us-east-1"               # AWS region
     dynamodb_table = "terraformstatelocks"

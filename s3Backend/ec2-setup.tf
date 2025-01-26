@@ -87,7 +87,7 @@ resource "aws_instance" "terra_instance" {
   vpc_security_group_ids = [ "${aws_security_group.terra_security_group.id}" ]
   associate_public_ip_address = true
   tags = {
-    Name = "jenkins-instance"
+    Name = "terra_instance"
   }
   ami = "${data.aws_ami.latest-ubuntu.id}"
   availability_zone = "${var.azs}"
