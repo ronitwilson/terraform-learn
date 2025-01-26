@@ -26,3 +26,14 @@ these will get printout at the end
 
 # 2 types of provisioners
 ![terraform provisioners](image.png)
+
+# How to use terraform output
+```
+output "private_key_pem" {
+  value     = tls_private_key.ec2-key.private_key_pem
+   sensitive = true
+}
+
+and then 
+terraform output private_key_pem
+```
