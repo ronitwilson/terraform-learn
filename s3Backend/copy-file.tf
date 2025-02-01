@@ -18,6 +18,15 @@ resource "null_resource" "copy_file_on_vm" {
     provisioner "local-exec" {
     command = "echo File copied successfully"
 }
+
+    provisioner "remote-exec" {
+           inline = [
+      "sudo yum update -y",  # For Amazon Linux
+      "sudo amazon-linux-extras enable ansible2",
+      "sudo yum install -y ansible"
+            ]
+    }
+
     triggers = {
         "always_run" = "${timestamp()}"
     }
