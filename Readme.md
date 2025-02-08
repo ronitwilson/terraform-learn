@@ -37,3 +37,10 @@ output "private_key_pem" {
 and then 
 terraform output private_key_pem
 ```
+
+# Terraform modules
+We set the terraform vars file as we want and then we can use the pre set code of the module to perform the given 
+
+* We can get the modules from the local path
+* s3
+* github
