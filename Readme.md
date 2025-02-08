@@ -44,3 +44,7 @@ We set the terraform vars file as we want and then we can use the pre set code o
 * We can get the modules from the local path
 * s3
 * github
+
+# Terraform Loops
+Saw that for each works in a particual way with aws_ingress rules(dynamic block), it accepts list
+but with aws_intsance(resource block) it expects a map or set
