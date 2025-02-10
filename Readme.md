@@ -48,3 +48,10 @@ We set the terraform vars file as we want and then we can use the pre set code o
 # Terraform Loops
 Saw that for each works in a particual way with aws_ingress rules(dynamic block), it accepts list
 but with aws_intsance(resource block) it expects a map or set
+
+
+# Terraform cloud
+* ability to run directly from git
+* there is a cli tool which gets connected to the backend
+* but the actual execution is in the cloud
+* so need to set the variables.possibility of terraform vars and environment vars
