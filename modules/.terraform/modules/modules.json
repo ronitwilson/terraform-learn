@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"vm","Source":"git::https://github.com/anujdevopslearn/terraform-modules.git//ec2_module","Dir":".terraform/modules/vm/ec2_module"}]}

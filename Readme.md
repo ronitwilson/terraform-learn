@@ -48,3 +48,10 @@ We set the terraform vars file as we want and then we can use the pre set code o
 # Terraform Loops
 Saw that for each works in a particual way with aws_ingress rules(dynamic block), it accepts list
 but with aws_intsance(resource block) it expects a map or set
+
+# Scaning Terraform script
+* tool called checkov (https://www.checkov.io/)
+
+# Logging in terraform
+Possiblity of using terraform cloud to store the logs
+example of using eterrafor cloud
